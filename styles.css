@@ -108,3 +108,23 @@ nav {
       color: #a4a4a4; }
     .project-boxes .project-box img {
       width: 100%; }
+
+.contact hr {
+  border: 6px solid #f76d61;
+  width: 60px;
+  border-radius: 15px;
+  float: left; }
+
+.contact h1 {
+  font-family: "Galada", cursive;
+  color: #f76d61;
+  font-size: 50px;
+  margin-bottom: 0; }
+
+.contact-images {
+  margin-top: 40px;
+  height: 80px;
+  overflow: hidden; }
+  .contact-images img {
+    width: 100%;
+    max-width: 80px; }
