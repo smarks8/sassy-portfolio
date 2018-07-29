@@ -4,26 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
     <title>Stacey Marks</title>
   </head>
   <body>
-    <nav>
+    <nav id="navigation">
       <div>
         <h2>Stacey Marks</h2>
       </div>
       <div>
         <ul>
-          <li>home</li>
-          <li>about</li>
-          <li>projects</li>
-          <li>contact</li>
+          <li><a href="#intro">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
       </div>
     </nav>
+    <div class="top-bar">
+      <div class="hamburger-menu">
+      <div></div>
+      <div></div>
+      <div></div>
+      </div>
+    </div>
     <div class="content">
-      <div class="intro">
+      <div class="intro" id="intro">
         <div class="name">
           <h1>Stacey Marks</h1>
           <hr>
@@ -38,7 +46,7 @@
           </div>
         </div>
       </div>
-      <div class="about">
+      <div class="about" id="about">
         <h1>about</h1>
         <hr>
         <ul class="about-list">
@@ -54,7 +62,7 @@
           <li>definitely a dog person</li>
         </ul>
       </div>
-      <div class="projects">
+      <div class="projects" id="projects">
         <h1>projects</h1>
         <hr>
         <div class="project-boxes">
@@ -96,7 +104,7 @@
           </div>
         </div>
       </div>
-      <div class="contact">
+      <div class="contact" id="contact">
         <h1>contact</h1>
         <hr>
         <div class="contact-images">
@@ -106,5 +114,9 @@
         </div>
       </div>
     </div>
+    <footer>
+      <p>&copy 2018 Stacey Marks</p>
+    </footer>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

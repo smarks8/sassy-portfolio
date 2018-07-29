@@ -50,6 +50,38 @@ nav {
     li {
       line-height: 2.5;
       font-size: 18px;
+
+      a {
+        color: white;
+        text-decoration: none;
+
+        &:visited,
+        &:active {
+          color: white;
+        }
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.top-bar {
+  display: none;
+
+  .hamburger-menu {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: $s;
+
+    div {
+      width: 30px;
+      height: 3px;
+      background-color: black;
+      margin: 6px 0;
     }
   }
 }
@@ -204,14 +236,41 @@ nav {
   }
 }
 
+footer {
+  text-align: center;
+  margin-top: $xl;
+  font-size: 14px;
+  background-color: #f1f1f1;
+  height: 60px;
+  position: relative;
+
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+}
+
 @media only screen and (max-width: $tablet) {
   nav {
     display: none;
   }
 
+  .top-bar {
+    display: block;
+    height: 60px;
+    background-color: $coral;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
   .content {
     margin-left: 0;
     padding: 0 $m;
+    margin-top: $xl;
   }
 
   .intro .home-images {
