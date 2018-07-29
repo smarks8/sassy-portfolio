@@ -111,3 +111,34 @@ nav {
     margin-top: $l;
   }
 }
+
+.project-boxes {
+
+  .project-box {
+    .project-links {
+      a {
+        &:active,
+        &:visited {
+          color: $coral;
+        }
+
+        &:hover {
+          color: black;
+        }
+
+        &:first-of-type {
+          border-right: 2px solid black;
+          padding-right: $s;
+        }
+
+        &:last-of-type {
+          padding-left: $xs;
+        }
+      }
+    }
+
+    .tiny-blurb {
+      color: #a4a4a4;
+    }
+  }
+}

@@ -72,3 +72,19 @@ nav {
   .about-list {
     line-height: 1.5;
     margin-top: 40px; }
+
+.project-boxes .project-box .project-links a:active, .project-boxes .project-box .project-links a:visited {
+  color: #f76d61; }
+
+.project-boxes .project-box .project-links a:hover {
+  color: black; }
+
+.project-boxes .project-box .project-links a:first-of-type {
+  border-right: 2px solid black;
+  padding-right: 10px; }
+
+.project-boxes .project-box .project-links a:last-of-type {
+  padding-left: 5px; }
+
+.project-boxes .project-box .tiny-blurb {
+  color: #a4a4a4; }
