@@ -7,6 +7,7 @@ $coral: rgb(247, 109, 97);
 $font: "Raleway", sans-serif;
 $font-titles: "Galada", cursive;
 $nav-width: 220px;
+$gray: #a4a4a4;
 
 body {
   box-sizing: border-box;
@@ -112,9 +113,36 @@ nav {
   }
 }
 
+.projects {
+  hr {
+    border: 6px solid $coral;
+    width: 60px;
+    border-radius: 15px;
+    float: left;
+  }
+
+  h1 {
+    font-family: $font-titles;
+    color: $coral;
+    font-size: 50px;
+    margin-bottom: 0;
+  }
+}
+
 .project-boxes {
+  display: flex;
+  margin-top: $l;
 
   .project-box {
+    width: 30%;
+    background-color: #f1f1f1;
+    margin: 0 $s;
+
+    &-text {
+      padding-left: $m;
+      padding-right: $m;
+    }
+
     .project-links {
       a {
         &:active,
@@ -138,7 +166,11 @@ nav {
     }
 
     .tiny-blurb {
-      color: #a4a4a4;
+      color: $gray;
+    }
+
+    img {
+      width: 100%;
     }
   }
 }
