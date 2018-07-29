@@ -2,8 +2,11 @@ $xs: 5px;
 $s: 10px;
 $m: 25px;
 $l: 40px;
+$xl: 70px;
 $coral: rgb(247, 109, 97);
 $font: "Raleway", sans-serif;
+$font-titles: "Galada", cursive;
+$nav-width: 220px;
 
 body {
   box-sizing: border-box;
@@ -12,8 +15,17 @@ body {
   font-family: $font;
 }
 
+.content {
+  margin-left: calc(#{$nav-width} + #{$xl});
+
+}
+
 nav {
   height: 100vh;
+  width: 100%;
+  max-width: $nav-width;
+  position: fixed;
+  top: 0;
   background-color: $coral;
   display: flex;
   flex-direction: column;
@@ -36,5 +48,21 @@ nav {
       line-height: 2.5;
       font-size: 18px;
     }
+  }
+}
+
+.intro {
+
+  h1 {
+    font-family: $font-titles;
+    font-size: 64px;
+    margin-bottom: $s;
+  }
+
+  hr {
+    border: 6px solid $coral;
+    width: 100px;
+    border-radius: 15px;
+    float: left;
   }
 }
