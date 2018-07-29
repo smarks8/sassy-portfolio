@@ -87,5 +87,27 @@ nav {
       }
     }
   }
+}
 
+.about {
+  margin-top: $xl;
+
+  h1 {
+    font-family: $font-titles;
+    color: $coral;
+    font-size: 50px;
+    margin-bottom: 0;
+  }
+
+  hr {
+    border: 6px solid $coral;
+    width: 60px;
+    border-radius: 15px;
+    float: left;
+  }
+
+  &-list {
+    line-height: 1.5;
+    margin-top: $l;
+  }
 }

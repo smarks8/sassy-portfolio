@@ -56,3 +56,19 @@ nav {
     margin-left: 10px; }
     .intro .home-images .images-right img:first-of-type {
       margin-bottom: 5px; }
+
+.about {
+  margin-top: 70px; }
+  .about h1 {
+    font-family: "Galada", cursive;
+    color: #f76d61;
+    font-size: 50px;
+    margin-bottom: 0; }
+  .about hr {
+    border: 6px solid #f76d61;
+    width: 60px;
+    border-radius: 15px;
+    float: left; }
+  .about-list {
+    line-height: 1.5;
+    margin-top: 40px; }
