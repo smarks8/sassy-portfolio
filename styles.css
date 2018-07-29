@@ -156,14 +156,15 @@ footer {
   font-size: 14px;
   background-color: #f1f1f1;
   height: 60px;
-  position: relative; }
+  position: relative;
+  width: 100%;
+  z-index: -1; }
   footer p {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    margin: 0; }
+    top: 20%;
+    margin-left: calc(220px + 50%);
+    -webkit-transform: translateX(calc(-50% - 110px));
+            transform: translateX(calc(-50% - 110px)); }
 
 @media only screen and (max-width: 768px) {
   nav {

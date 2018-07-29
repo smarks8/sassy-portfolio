@@ -240,16 +240,17 @@ footer {
   text-align: center;
   margin-top: $xl;
   font-size: 14px;
-  background-color: #f1f1f1;
+  background-color:#f1f1f1;
   height: 60px;
   position: relative;
+  width: 100%;
+  z-index: -1;
 
   p {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
+    top: 20%;
+    margin-left: calc(#{$nav-width} + 50%);
+    transform: translateX(calc(-50% - 110px));
   }
 }
 
