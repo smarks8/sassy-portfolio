@@ -70,6 +70,8 @@ nav {
   margin-top: 70px; }
   .intro .home-images img {
     width: 100%; }
+    .intro .home-images img:hover {
+      opacity: .8; }
   .intro .home-images .image-left,
   .intro .home-images .images-right {
     width: 45%; }
