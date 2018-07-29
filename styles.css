@@ -5,7 +5,8 @@ body {
   font-family: "Raleway", sans-serif; }
 
 .content {
-  margin-left: calc(220px + 70px); }
+  margin-left: calc(220px + 25px);
+  padding: 0 70px; }
 
 nav {
   height: 100vh;
@@ -41,3 +42,17 @@ nav {
   width: 100px;
   border-radius: 15px;
   float: left; }
+
+.intro .home-images {
+  display: flex;
+  clear: both;
+  margin-top: 70px; }
+  .intro .home-images img {
+    width: 100%; }
+  .intro .home-images .image-left,
+  .intro .home-images .images-right {
+    width: 45%; }
+  .intro .home-images .images-right {
+    margin-left: 10px; }
+    .intro .home-images .images-right img:first-of-type {
+      margin-bottom: 5px; }

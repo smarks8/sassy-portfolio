@@ -16,8 +16,8 @@ body {
 }
 
 .content {
-  margin-left: calc(#{$nav-width} + #{$xl});
-
+  margin-left: calc(#{$nav-width} + #{$m});
+   padding: 0 $xl;
 }
 
 nav {
@@ -52,7 +52,6 @@ nav {
 }
 
 .intro {
-
   h1 {
     font-family: $font-titles;
     font-size: 64px;
@@ -65,4 +64,28 @@ nav {
     border-radius: 15px;
     float: left;
   }
+
+  .home-images {
+    display: flex;
+    clear: both;
+    margin-top: $xl;
+
+    img {
+      width: 100%;
+    }
+
+    .image-left,
+    .images-right {
+      width: 45%;
+    }
+
+    .images-right {
+      margin-left: $s;
+
+      img:first-of-type {
+        margin-bottom: $xs;
+      }
+    }
+  }
+
 }
