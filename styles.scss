@@ -1,0 +1,40 @@
+$xs: 5px;
+$s: 10px;
+$m: 25px;
+$l: 40px;
+$coral: rgb(247, 109, 97);
+$font: "Raleway", sans-serif;
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+}
+
+nav {
+  height: 100vh;
+  background-color: $coral;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20%;
+  padding-left: $m;
+  color: white;
+  font-weight: lighter;
+
+  h2 {
+    margin-bottom: $l;
+    font-weight: lighter;
+    font-size: 24px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      line-height: 2.5;
+      font-size: 18px;
+    }
+  }
+}
