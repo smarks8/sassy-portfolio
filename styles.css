@@ -128,3 +128,22 @@ nav {
   .contact-images img {
     width: 100%;
     max-width: 80px; }
+
+@media only screen and (max-width: 768px) {
+  nav {
+    display: none; }
+  .content {
+    margin-left: 0;
+    padding: 0 25px; }
+  .intro .home-images {
+    display: block; }
+    .intro .home-images .image-left,
+    .intro .home-images .images-right {
+      width: 100%; }
+    .intro .home-images .images-right {
+      margin-left: 0; }
+  .project-boxes {
+    flex-direction: column; }
+    .project-boxes .project-box {
+      width: 100%;
+      margin: 0 0 25px 0; } }

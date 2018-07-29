@@ -8,6 +8,8 @@ $font: "Raleway", sans-serif;
 $font-titles: "Galada", cursive;
 $nav-width: 220px;
 $gray: #a4a4a4;
+$mobile: 480px;
+$tablet: 768px;
 
 body {
   box-sizing: border-box;
@@ -18,7 +20,7 @@ body {
 
 .content {
   margin-left: calc(#{$nav-width} + #{$m});
-   padding: 0 $xl;
+  padding: 0 $xl;
 }
 
 nav {
@@ -198,6 +200,39 @@ nav {
     img {
       width: 100%;
       max-width: 80px;
+    }
+  }
+}
+
+@media only screen and (max-width: $tablet) {
+  nav {
+    display: none;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 0 $m;
+  }
+
+  .intro .home-images {
+    display: block;
+
+    .image-left,
+    .images-right {
+      width: 100%;
+    }
+
+    .images-right {
+      margin-left: 0;
+    }
+  }
+
+  .project-boxes {
+    flex-direction: column;
+
+    .project-box {
+      width: 100%;
+      margin: 0 0 $m 0;
     }
   }
 }
