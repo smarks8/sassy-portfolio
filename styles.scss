@@ -80,7 +80,7 @@ nav {
     div {
       width: 30px;
       height: 3px;
-      background-color: black;
+      background-color: white;
       margin: 6px 0;
     }
   }
@@ -230,12 +230,22 @@ nav {
 
   &-images {
     margin-top: $l;
-    height: 80px;
     overflow: hidden;
 
-    img {
+    #github-logo {
       width: 100%;
       max-width: 80px;
+    }
+
+    #gmail-logo {
+      width: 100%;
+      max-width: 100px;
+      margin-bottom: -20px;
+    }
+
+    #linkedin-logo {
+      width: 100%;
+      max-width: 70px;
     }
   }
 }

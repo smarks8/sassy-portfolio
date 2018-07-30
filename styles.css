@@ -50,7 +50,7 @@ nav {
     .top-bar .hamburger-menu div {
       width: 30px;
       height: 3px;
-      background-color: black;
+      background-color: white;
       margin: 6px 0; }
 
 .intro h1 {
@@ -146,11 +146,17 @@ nav {
 
 .contact-images {
   margin-top: 40px;
-  height: 80px;
   overflow: hidden; }
-  .contact-images img {
+  .contact-images #github-logo {
     width: 100%;
     max-width: 80px; }
+  .contact-images #gmail-logo {
+    width: 100%;
+    max-width: 100px;
+    margin-bottom: -20px; }
+  .contact-images #linkedin-logo {
+    width: 100%;
+    max-width: 70px; }
 
 footer {
   text-align: center;
