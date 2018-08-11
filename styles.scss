@@ -272,6 +272,7 @@ footer {
 @media only screen and (max-width: $tablet) {
   nav {
     display: none;
+    padding-top: 10%;
   }
 
   .top-bar {
@@ -281,10 +282,6 @@ footer {
     position: fixed;
     top: 0;
     width: 100%;
-  }
-
-  nav {
-    padding-top: 10%;
   }
 
   .content {
