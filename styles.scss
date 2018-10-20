@@ -7,9 +7,13 @@ $coral: rgb(247, 109, 97);
 $font: "Raleway", sans-serif;
 $font-titles: "Galada", cursive;
 $nav-width: 220px;
+$gray-darker: #4d4d4d;
 $gray: #a4a4a4;
+$gray-lighter: #f1f1f1;
 $mobile: 480px;
 $tablet: 768px;
+$box-shadow-specs: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 
 body {
   box-sizing: border-box;
@@ -61,7 +65,7 @@ nav {
         }
 
         &:hover {
-          color: black;
+          color: $gray-darker;
         }
       }
     }
@@ -109,7 +113,8 @@ nav {
       width: 100%;
 
       &:hover {
-        opacity: .8;
+        opacity: .9;
+        box-shadow: $box-shadow-specs;
       }
     }
 
@@ -118,11 +123,23 @@ nav {
       width: 45%;
     }
 
+    .me-sitting {
+      height: 100%;
+    }
+
     .images-right {
       margin-left: $s;
 
-      img:first-of-type {
-        margin-bottom: $xs;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      img {
+        height: 49%;
+
+        &:first-of-type {
+          margin-bottom: $xs;
+        }
       }
     }
   }
@@ -173,7 +190,7 @@ nav {
 
   .project-box {
     width: 30%;
-    background-color: #f1f1f1;
+    background-color: $gray-lighter;
     margin: 0 $s;
 
     &-text {
@@ -189,7 +206,7 @@ nav {
         }
 
         &:hover {
-          color: black;
+          color: $gray-darker;
         }
 
         &:first-of-type {
@@ -247,6 +264,10 @@ nav {
       width: 100%;
       max-width: 70px;
     }
+
+    img:hover {
+      opacity: .7;
+    }
   }
 }
 
@@ -254,7 +275,7 @@ footer {
   text-align: center;
   margin-top: $xl;
   font-size: 14px;
-  background-color:#f1f1f1;
+  background-color: $gray-lighter;
   height: 60px;
   position: relative;
   width: 100%;

@@ -37,7 +37,7 @@ nav {
         nav ul li a:visited, nav ul li a:active {
           color: white; }
         nav ul li a:hover {
-          color: black; }
+          color: #4d4d4d; }
 
 .top-bar {
   display: none; }
@@ -71,14 +71,22 @@ nav {
   .intro .home-images img {
     width: 100%; }
     .intro .home-images img:hover {
-      opacity: .8; }
+      opacity: .9;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .intro .home-images .image-left,
   .intro .home-images .images-right {
     width: 45%; }
+  .intro .home-images .me-sitting {
+    height: 100%; }
   .intro .home-images .images-right {
-    margin-left: 10px; }
-    .intro .home-images .images-right img:first-of-type {
-      margin-bottom: 5px; }
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .intro .home-images .images-right img {
+      height: 49%; }
+      .intro .home-images .images-right img:first-of-type {
+        margin-bottom: 5px; }
 
 .about {
   margin-top: 70px; }
@@ -121,7 +129,7 @@ nav {
     .project-boxes .project-box .project-links a:active, .project-boxes .project-box .project-links a:visited {
       color: #f76d61; }
     .project-boxes .project-box .project-links a:hover {
-      color: black; }
+      color: #4d4d4d; }
     .project-boxes .project-box .project-links a:first-of-type {
       border-right: 2px solid black;
       padding-right: 10px; }
@@ -157,6 +165,8 @@ nav {
   .contact-images #linkedin-logo {
     width: 100%;
     max-width: 70px; }
+  .contact-images img:hover {
+    opacity: .7; }
 
 footer {
   text-align: center;
