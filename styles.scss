@@ -121,6 +121,7 @@ i {
       padding-left: 250px;
     }
     @media (max-width: $tablet) {
+      background-color: pink;
       .name {
         font-size: 100px;
       }
@@ -135,6 +136,7 @@ i {
       }
     }
     @media (max-width: $mobile) {
+      background-color: green;
       .name {
         font-size: 75px;
       }
@@ -177,6 +179,27 @@ i {
       bottom: 0;
       animation: bounce 2s infinite;
     }
+    @media (max-width: $tablet) {
+      .me-sitting {
+        height: 500px;
+        box-shadow: -20px -20px $purple;
+        border: 1px solid white;
+      }
+        &-words {
+        margin-left: 25px;
+        &__name {
+          color: $hot-pink;
+          font-weight: 800;
+          font-size: 50px;
+      }
+        &__desc {
+          font-size: 20px;
+        }
+      }
+    }
+    @media (max-width: $mobile) {
+
+    }
   }
 
   .projects {
@@ -196,6 +219,8 @@ i {
       left: 0;
     }
   }
+
+  // contact section with circle svg links
   .contact {
     background-color: $purple;
     color: white;
@@ -206,23 +231,28 @@ i {
     justify-content: center;
     flex-direction: column;
     padding-top: 50px;
+    @media (max-width: $tablet) { font-size: 70px;}
+    @media (max-width: $mobile) { font-size: 60px;}
     .creds {
       font-size: 10px;
     }
     .media-icons {
       margin: 50px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%;
+      svg { 
+        height: 150px;
+        width: 150px;
+        @media (max-width: $tablet) { height: 110px; width: 110px;}
+        @media (max-width: $mobile) { height: 85px; width: 85px;}
+      }
       a {
         fill: white;
         &:hover {
           fill: $hot-pink;
         }
-        // &.linkedin-logo:hover {
-        //   fill: #1273B0;
-          
-        // }
-        // &.github-logo:hover {
-        //   fill: #24292e;
-        // }
       }
     }
   }
