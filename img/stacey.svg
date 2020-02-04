@@ -1,0 +1,19 @@
+
+<svg width="695px" height="371px" viewBox="0 0 695 371" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-3" transform="translate(-355.000000, -374.000000)">
+            <rect fill="#D4124C" x="0" y="0" width="1440" height="1024"></rect>
+            <g id="stacey" transform="translate(350.000000, 309.000000)" fill="#FFFFFF">
+                <text font-family="Poppins-ExtraBold, Poppins" font-size="187" font-weight="600">
+                    <tspan x="0" y="196">stacey</tspan>
+                </text>
+                <text id="&lt;-frontend-developer" font-family="Poppins-Regular, Poppins" font-size="39" font-weight="normal">
+                    <tspan x="227.2295" y="425">&lt;  frontend developer  /&gt;</tspan>
+                </text>
+                <text id="marks" font-family="Poppins-ExtraBold, Poppins" font-size="187" font-weight="600">
+                    <tspan x="66" y="360">marks</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

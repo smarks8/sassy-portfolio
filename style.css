@@ -65,43 +65,11 @@ i {
   animation: bounce 2s infinite; }
 
 .site-content .splash {
-  background-color: #D4124C;
-  height: 100vh;
-  align-items: center;
-  display: flex;
-  justify-content: center; }
-  .site-content .splash__text-container {
-    color: white; }
-  .site-content .splash .name {
-    font-size: 187px;
-    font-weight: 800; }
-  .site-content .splash__marks {
-    padding-left: 65px;
-    line-height: 55px; }
-  .site-content .splash__dev {
-    font-size: 39px;
-    padding-top: 50px;
-    padding-left: 250px; }
-  @media (max-width: 768px) {
-    .site-content .splash .name {
-      font-size: 100px; }
-    .site-content .splash__marks {
-      padding-left: 30px;
-      line-height: 35px; }
-    .site-content .splash__dev {
-      font-size: 20px;
-      padding-top: 25px;
-      padding-left: 135px; } }
-  @media (max-width: 480px) {
-    .site-content .splash .name {
-      font-size: 75px; }
-    .site-content .splash__marks {
-      padding-left: 25px;
-      line-height: 25px; }
-    .site-content .splash__dev {
-      font-size: 17px;
-      padding-top: 20px;
-      padding-left: 80px; } }
+  background-color: orange;
+  height: 100vh; }
+  .site-content .splash .name-svg {
+    width: 100px;
+    height: 300px; }
 .site-content .about {
   display: flex;
   align-items: center;
@@ -440,4 +408,4 @@ a:focus {
     margin-top: 30vh;
     font-size: 1.75rem; } }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */

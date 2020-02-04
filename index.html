@@ -5,120 +5,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
-    <title>Stacey Marks</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,800&display=swap" rel="stylesheet">    <title>Stacey Marks</title>
+  	<script>
+	document.documentElement.className = "js";
+	var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+	supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
   </head>
-  <body>
-    <nav id="navigation">
-      <div>
-        <h2>Stacey Marks</h2>
+  <body class=" loading">
+    <div class="site-content">
+      <div class="splash">
+        <div class="splash__text-container">
+          <div class="splash__stacey name">stacey</div>
+          <div class="splash__marks name">marks</div>
+          <div class="splash__dev">< frontend developer /></div>
+          <!-- <svg height="100%" width="100%">
+            <use xlink:href="img/stacey.svg#Welcome"></use>
+          </svg> -->
+        </div>
       </div>
-      <div>
-        <ul>
-          <li><a href="#intro">home</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#projects">projects</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
+      <div class="about">
+        <img class="me-sitting" src="img/me-sitting.jpg"/>
+        <div class="about-words">
+          <div class="about-words__name">meet stacey</div>
+          <div class="about-words__desc">
+            native new yorker. <strong>frontend developer.</strong> 
+            definitely a dog person. always learning new <strong>languages</strong>. loves a good green roof. 
+            fitness junkie. never thinks it’s a bad time for <strong>ice cream</strong>. yes, even in winter. 
+          </div>
+        </div>
+        <!-- <svg class="about-arrow bounce">
+          <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+        </svg> -->
+          <div class="arrow bounce">
+            <i class="fa fa-angle-down fa-5x" aria-hidden="true">ARROW HERE</i></div>
+          <div class="below"></div>
       </div>
-    </nav>
-    <div class="top-bar">
-      <div class="hamburger-menu">
-      <div></div>
-      <div></div>
-      <div></div>
+      <div class="projects">
+        <div class="projects-title">
+          projects
+        </div>
+        <div class="project-slideshow demo-1">
+          <div class="content">
+            <div class="content__slide">
+              <div class="content__img">
+                <div class="content__img-inner" style="background-image: url(img/16.jpeg);"></div>
+              </div>
+              <div class="content__text-wrap">
+                <span class="content__text">
+                    <span class="content__text-inner content__text-inner--stroke">project1</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner">project1</span>
+                </span>
+                <span class="content__text content__text--full">
+                    <span class="content__text-inner content__text-inner--stroke">project1</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner content__text-inner--stroke">project1</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner">project1</span>
+                </span>
+                <span class="content__text content__text--full">
+                    <span class="content__text-inner">project1</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner content__text-inner--bottom">project1</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner">project1</span>
+                </span>
+                <span class="content__text content__text--full">
+                    <span class="content__text-inner content__text-inner--stroke">project1</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner content__text-inner--stroke content__text-inner--bottom">project1</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner">project1</span>
+                </span>
+              </div>
+            </div>
+            <div class="content__slide">
+              <div class="content__img">
+                <div class="content__img-inner" style="background-image: url(img/14.jpeg);"></div>
+              </div>
+              <div class="content__text-wrap">
+                <span class="content__text">
+                    <span class="content__text-inner content__text-inner--stroke">project2</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner">project2</span>
+                </span>
+                <span class="content__text content__text--full">
+                    <span class="content__text-inner content__text-inner--stroke">project2</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner content__text-inner--stroke">project2</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner">project2</span>
+                </span>
+                <span class="content__text content__text--full">
+                    <span class="content__text-inner">project2</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner content__text-inner--bottom">project2</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner">project2</span>
+                </span>
+                <span class="content__text content__text--full">
+                    <span class="content__text-inner content__text-inner--stroke">project2</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner content__text-inner--stroke content__text-inner--bottom">project2</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner">project2</span>
+                </span>
+              </div>
+            </div>
+            <div class="content__slide">
+              <div class="content__img">
+                <div class="content__img-inner" style="background-image: url(img/15.jpeg);"></div>
+              </div>
+              <div class="content__text-wrap">
+                <span class="content__text">
+                    <span class="content__text-inner content__text-inner--stroke">project3</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner">project3</span>
+                </span>
+                <span class="content__text content__text--full">
+                    <span class="content__text-inner content__text-inner--stroke">project3</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner content__text-inner--stroke">project3</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner">project3</span>
+                </span>
+                <span class="content__text content__text--full ">
+                    <span class="content__text-inner">project3</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner content__text-inner--bottom">project3</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner">project3</span>
+                </span>
+                <span class="content__text content__text--full">
+                    <span class="content__text-inner content__text-inner--stroke">project3</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner content__text-inner--stroke content__text-inner--bottom">project3</span>
+                </span>
+                <span class="content__text">
+                    <span class="content__text-inner">project3</span>
+                </span>
+              </div>
+            </div>
+            <nav class="content__nav">
+              <button class="content__nav-button content__nav-button--prev">Prev</button>
+              <button class="content__nav-button content__nav-button--next">Next</button>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        contact
+        <div class="media-icons">
+          <svg >
+            <a class="email-logo" xlink:href="https://www.linkedin.com/in/staceymarks/" target="_blank">
+            <use xlink:href="img/email-icon.svg#email-icon"></use>
+          </svg>
+          <svg >
+            <a class="linkedin-logo" xlink:href="https://www.linkedin.com/in/staceymarks/" target="_blank">
+            <use xlink:href="img/sprite.svg#icon-linkedin-with-circle"></use>
+          </svg>
+          <svg >
+            <a xlink:href="https://github.com/smarks8" class="github-logo" target="_blank">
+            <use xlink:href="img/sprite.svg#icon-github-with-circle"></use>
+          </svg>
+        </div>
+        <p class="creds">
+          &copy; 2019 Dev + Design by Stacey Marks x Maria Tsampas
+        </p>
+        
       </div>
     </div>
-    <div class="content">
-      <div class="intro" id="intro">
-        <div class="name">
-          <h1>Stacey Marks</h1>
-          <hr>
-        </div>
-        <div class="home-images">
-          <div class="image-left">
-            <img src="images/me-sitting.jpg" class="me-sitting"alt="">
-          </div>
-          <div class="images-right">
-            <img src="images/mountain-me.jpg" class="mountain-me" alt="">
-            <img src="images/iamstace.jpg" class="iamstace" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="about" id="about">
-        <h1>about</h1>
-        <hr>
-        <ul class="about-list">
-          <li>casual urban cyclist with a serious sweet tooth</li>
-          <li>native new yorker</li>
-          <li>full-stack developer</li>
-          <li>passion for languages</li>
-            <ul>
-              <li>technical: javascript, ruby</li>
-              <li>spoken: mandarin, spanish</li>
-            </ul>
-          <li>loves fitness, food & foreign travel</li>
-          <li>sucker for green roofs</li>
-          <li>definitely a dog person</li>
-        </ul>
-      </div>
-      <div class="projects" id="projects">
-        <h1>projects</h1>
-        <hr>
-        <div class="project-boxes">
-          <div class="project-box">
-            <img src="images/new-fatty-screencap.png" alt="">
-            <div class="project-box-text">
-              <h2>fatty</h2>
-              <div class="project-links">
-                <a href="https://www.youtube.com/watch?v=UlHGJS7r7Bo&feature=youtu.be" target="_blank">demo</a>
-                <a href="https://github.com/smarks8/FINALPROJECTFATTY" target="_blank">repo</a>
-              </div>
-              <p class="tiny-blurb">"f.a.t.t.y. - finding all the tantilizing yummies"</p>
-              <p>premier bucket list app to find and track every yummy that your tummy may desire</p>
-            </div>
-          </div>
-          <div class="project-box">
-            <img src="images/new-ath-screencap.png" alt="">
-            <div class="project-box-text">
-              <h2>apples to humanity</h2>
-              <div class="project-links">
-                <a href="https://www.youtube.com/watch?v=eNj0o_qLcUQ&feature=youtu.be" target="_blank">demo</a>
-                <a href="https://github.com/smarks8/apples-to-humanity" target="_blank">repo</a>
-              </div>
-              <p class="tiny-blurb">“an internet game for horrible people who enjoy hilarious comparisons”</p>
-              <p>web-based version of cards against humanity, or apples to apples</p>
-            </div>
-          </div>
-          <div class="project-box">
-            <img src="images/space-jump-screencap.png" alt="">
-            <div class="project-box-text">
-              <h2>space jump</h2>
-              <div class="project-links">
-                <a href="https://www.youtube.com/watch?v=Y7wKfYNp6W8&feature=youtu.be" target="_blank">demo</a>
-                <a href="https://github.com/smarks8/Space-Jump" target="_blank">repo</a>
-              </div>
-              <p class="tiny-blurb">"like doodle jump...but better"</p>
-              <p>highly addictive & highly infuriating rendition of the classic time suck game</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="contact" id="contact">
-        <h1>contact</h1>
-        <hr>
-        <div class="contact-images">
-          <a href="https://github.com/smarks8" target=“_blank”><img src="images/Octocat.png" id='github-logo'></a>
-          <a href="mailto:staceyamarks@gmail.com" target=“_blank”><img src="images/gmail.png" id='gmail-logo'></a>
-          <a href="https://www.linkedin.com/in/staceymarks/" target=“_blank”><img src="images/linkedin.png" id='linkedin-logo'></a>
-        </div>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <p>&copy 2018 Stacey Marks</p>
-    </footer>
+  	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/demo1.js"></script>
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
