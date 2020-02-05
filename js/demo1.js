@@ -166,32 +166,34 @@
         why(){
           let modalInfo = {
             futurefoundry : { 
-              link: 'ff link',
-              desc: 'desc'
+              title: 'future foundry marketing site',
+              link: 'https://futurefoundry.co/',
+              desc: 'Built with buzzwords: ES6, React, Gatsby, Hooks, D3, SCSS/SASS',
+              highlights: 'Fun highlights: newtons cradle animation, form integration, standardized typography'
             },
             jetsweat: { 
               link: 'JS link',
-              desc: 'desc'
+              desc: 'React, CSS'
             },
             blueabode: { 
               link: 'BA link',
-              desc: 'desc'
+              desc: 'Vanilla JS, SASS'
             },
             ogportfolio: { 
               link: 'portfolio link',
-              desc: 'desc'
+              desc: 'Vanilla JS, SASS'
             },
             fatty: { 
               link: 'fatty link',
-              desc: 'desc'
+              desc: 'React, Redux, CSS'
             },
             applestohumanity: { 
               link: 'apples link',
-              desc: 'desc'
+              desc: 'Ruby on Rails'
             },
             spacejump: { 
               link: 'spacejump link',
-              desc: 'desc'
+              desc: 'Vanilla JS, CSS'
             },
           }
           let current = this.DOM.el.querySelector('.content__slide--current')
@@ -200,8 +202,10 @@
             let str = key + ""
             if (current.classList.contains(str)) {
               console.log(key)
-              document.getElementById("modal-link").innerHTML = modalInfo[key].link;
+              document.getElementById("modal-title").innerHTML = modalInfo[key].title;
+              document.getElementById("modal-link").innerHTML = "Check it out: <a href='"+modalInfo[key].link+"'>"+modalInfo[key].link+"</a>";
               document.getElementById("modal-desc").innerHTML = modalInfo[key].desc;
+              document.getElementById("modal-highlights").innerHTML = modalInfo[key].highlights;
             }
           }
 
