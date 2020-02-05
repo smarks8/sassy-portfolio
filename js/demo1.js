@@ -135,7 +135,10 @@
             // Navigation controls
             this.DOM.nav = {
                 prev: this.DOM.el.querySelector('.content__nav-button--prev'),
-                next: this.DOM.el.querySelector('.content__nav-button--next')
+                next: this.DOM.el.querySelector('.content__nav-button--next'),
+                more: this.DOM.el.querySelector('.content__nav-button--more'),
+                modal: this.DOM.el.querySelector('.content__modal'),
+                modalButton: this.DOM.el.querySelector('.content__modal-button'),
             };
             // All slides
             this.slides = [];
@@ -148,13 +151,65 @@
             this.slides[this.current].DOM.el.classList.add('content__slide--current');
             // Initialize some events
             this.initEvents();
+            this.modalOpen = false;
         }
         initEvents() {
-            // Clicking next and previous controls.
+            // Clicking next and previous controls.            
             this.onClickPrevFn = _ => this.navigate('prev');
             this.onClickNextFn = _ => this.navigate('next');
+            this.toggleModal = _ => this.why();
             this.DOM.nav.prev.addEventListener('click', this.onClickPrevFn);
             this.DOM.nav.next.addEventListener('click', this.onClickNextFn);
+            this.DOM.nav.more.addEventListener('click', this.toggleModal);
+            this.DOM.nav.modalButton.addEventListener('click', this.toggleModal);
+        }
+        why(){
+          let modalInfo = {
+            futurefoundry : { 
+              link: 'ff link',
+              desc: 'desc'
+            },
+            jetsweat: { 
+              link: 'JS link',
+              desc: 'desc'
+            },
+            blueabode: { 
+              link: 'BA link',
+              desc: 'desc'
+            },
+            ogportfolio: { 
+              link: 'portfolio link',
+              desc: 'desc'
+            },
+            fatty: { 
+              link: 'fatty link',
+              desc: 'desc'
+            },
+            applestohumanity: { 
+              link: 'apples link',
+              desc: 'desc'
+            },
+            spacejump: { 
+              link: 'spacejump link',
+              desc: 'desc'
+            },
+          }
+          let current = this.DOM.el.querySelector('.content__slide--current')
+          console.log(current)
+          for (let key in modalInfo) {
+            let str = key + ""
+            if (current.classList.contains(str)) {
+              console.log(key)
+              document.getElementById("modal-link").innerHTML = modalInfo[key].link;
+              document.getElementById("modal-desc").innerHTML = modalInfo[key].desc;
+            }
+          }
+
+          if (this.DOM.nav.modal.classList.contains("modal-open")) {
+            this.DOM.nav.modal.classList.remove("modal-open")
+          } else {
+            this.DOM.nav.modal.classList.add("modal-open")
+          }
         }
         navigate(dir) {
             if ( this.isAnimating ) {
@@ -201,7 +256,4 @@
     imagesLoaded(document.querySelectorAll('.content__img-inner'), {background: true}, () => document.body.classList.remove('loading'));
 }
 
-$(window).scroll(function() {
-  $(".arrow").css("opacity", 1 - $(window).scrollTop() / 1700);
-  //250 is fade pixels
-});
+
